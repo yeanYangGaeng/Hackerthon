@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hackerthon</string>
+    <string name="serviceName">알레르기 성분 알리미 서비스</string>
+</resources>
