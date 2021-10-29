@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background2"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -16,7 +16,7 @@
         android:background="@color/white"
         android:paddingTop="30dp"
         android:paddingBottom="30dp"
-        android:text="@string/serviceName"
+        android:text="식품 검색"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="17dp" />
@@ -28,24 +28,57 @@
         android:background="#7A7A7A"
         android:layout_below="@id/serviceName"/>
 
-    <ImageView
-        android:id="@+id/barcordView"
+    <LinearLayout
+        android:id="@+id/searchingView"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_marginTop="70dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/barcode_background"
-        android:layout_below="@+id/lineFirst"/>
+        android:layout_height="60dp"
+        android:layout_below="@+id/lineFirst"
+        android:background="@color/light_green"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/cameraButton"
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:hint="식품명"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp" />
+
+        <ImageButton
+            android:id="@+id/searchFood"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:src="@drawable/searching"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/searchingRecord"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@null"
-        android:scaleType="centerInside"
-        android:src="@drawable/camera"
-        android:layout_below="@+id/barcordView"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchingView"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="9dp"
+        android:text="최근 기록"
+        android:textColor="#556557" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchingRecord"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="9dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "766172994466",
+    "project_id": "yeanyanggaeng",
+    "storage_bucket": "yeanyanggaeng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766172994466:android:43028123b6f26e1c8cf0fb",
+        "android_client_info": {
+          "package_name": "com.example.hackerthon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766172994466-afkrp8lshd6294bo3oclalsdbd7ndcgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbU6dXmaCWB77vdReJ7fB7V-p7B6jXdk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766172994466-afkrp8lshd6294bo3oclalsdbd7ndcgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
