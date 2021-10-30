@@ -29,24 +29,17 @@
         android:background="#7A7A7A"
         android:layout_below="@id/serviceName"/>
 
-    <ImageView
-        android:id="@+id/barcordView"
+    <ImageButton
+        android:id="@+id/barcodeSearching"
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:layout_marginTop="70dp"
+        android:layout_below="@+id/lineFirst"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/barcode_background"
-        android:layout_below="@+id/lineFirst"/>
-
-    <ImageButton
-        android:id="@+id/cameraButton"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
         android:background="@null"
         android:scaleType="centerInside"
-        android:src="@drawable/camera"
-        android:layout_below="@+id/barcordView"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        android:src="@drawable/barcodesearching"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="match_parent"

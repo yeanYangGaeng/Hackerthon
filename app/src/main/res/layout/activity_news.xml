@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/newsbackground"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,36 +17,10 @@
         android:fontFamily="@font/noto_sans"
         android:paddingTop="30dp"
         android:paddingBottom="30dp"
-        android:text="@string/serviceName"
+        android:text="뉴스"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="17dp" />
-
-    <View
-        android:id="@+id/lineFirst"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#7A7A7A"
-        android:layout_below="@id/serviceName"/>
-
-    <ImageView
-        android:id="@+id/barcordView"
-        android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_marginTop="70dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/barcode_background"
-        android:layout_below="@+id/lineFirst"/>
-
-    <ImageButton
-        android:id="@+id/cameraButton"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@null"
-        android:scaleType="centerInside"
-        android:src="@drawable/camera"
-        android:layout_below="@+id/barcordView"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="match_parent"
