@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Hackerthon</string>
+    <string name="app_name">알리지</string>
     <string name="serviceName">알레르기 성분 알리미 서비스</string>
+    <string name="allergicIngredient">알레르기 성분</string>
 </resources>

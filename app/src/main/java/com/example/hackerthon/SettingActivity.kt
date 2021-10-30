@@ -32,6 +32,11 @@ class SettingActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val allergySettingButton: Button = findViewById(R.id.allergySetting)
+        allergySettingButton.setOnClickListener{
+            val intent = Intent(this, AllergySettingActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

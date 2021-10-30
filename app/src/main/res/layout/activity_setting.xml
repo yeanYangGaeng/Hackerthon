@@ -8,15 +8,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/serviceName"
+
+    <Button
+        android:id="@+id/allergySetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/white"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
-        android:text="@string/serviceName"
+        android:layout_marginTop="230dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/noto_sans"
+        android:text="알레르기 정보 설정"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="17dp" />
@@ -25,27 +26,39 @@
         android:id="@+id/lineFirst"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_below="@+id/allergySetting"
+        android:background="#7A7A7A" />
+
+    <Button
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergySetting"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/noto_sans"
+        android:text="버전:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <View
+        android:id="@+id/lineSecond"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:background="#7A7A7A"
-        android:layout_below="@id/serviceName"/>
+        android:layout_below="@+id/version"/>
 
-    <ImageView
-        android:id="@+id/barcordView"
+    <Button
+        android:id="@+id/asking"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_marginTop="70dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/barcode_background"
-        android:layout_below="@+id/lineFirst"/>
-
-    <ImageButton
-        android:id="@+id/cameraButton"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@null"
-        android:scaleType="centerInside"
-        android:src="@drawable/camera"
-        android:layout_below="@+id/barcordView"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/noto_sans"
+        android:text="문의하기"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

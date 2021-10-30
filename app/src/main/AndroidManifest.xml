@@ -21,6 +21,11 @@
         <activity android:name=".NewsActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".SearchingActivity" />
+        <activity android:name=".AllergySettingActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
